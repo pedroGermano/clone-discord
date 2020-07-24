@@ -19,9 +19,83 @@ export const Profile = styled.div`
 
 
 `; 
-export const  Avatar = styled.div``;
-export const UserData  = styled.div``; 
-export const Icons  = styled.div``; 
-export const MicIcon  = styled(Mic)``; 
-export const HeadphoneIcon  = styled(Headset)``; 
-export const SettingsIcon = styled(Settings)``; 
+export const  Avatar = styled.div`
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: var(--gray);
+
+`;
+export const UserData  = styled.div`
+   margin-left: 8px;
+   display: flex;
+   flex-direction: column;
+
+   > strong {
+     color: var(--white);
+     font-size: 13px;
+     display: block;
+   }
+
+   > span{
+     color: var(--gray);
+     font-size: 13px;
+   }
+
+
+`; 
+export const Icons  = styled.div`
+  display: flex;
+  align-items: center;
+
+  > svg:not(:first-child){
+    margin-left: 7px;
+  }
+
+`; 
+export const MicIcon  = styled(Mic)`
+   width: 20px;
+   height: 20px;
+
+   color: var(--white);
+   opacity: .7;
+   cursor: pointer;
+
+   transition: opacity .2s;
+
+   a:hover{
+     opacity: 1;
+   }
+`; 
+export const HeadphoneIcon  = styled(Headset)`
+  width: 20px;
+   height: 20px;
+
+   color: var(--white);
+   opacity: .7;
+   cursor: pointer;
+
+   transition: opacity .2s;
+
+   a:hover{
+     opacity: 1;
+   }
+
+
+`; 
+export const SettingsIcon = styled(Settings)`
+  width: 20px;
+   height: 20px;
+
+   color: var(--white);
+   opacity: .7;
+   cursor: pointer;
+
+   transition: opacity .2s;
+
+   a:hover{
+     opacity: 1;
+   }
+
+
+`; 
