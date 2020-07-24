@@ -20,10 +20,11 @@ export const HashtagIcon  = styled(Hashtag)`
 
 
 `;
-export const Title = styled.div`
+export const Title = styled.h1`
   margin-left: 9px;
   font-size: 16px;
   font-weight: bold;
+  color: var(--white);
 
 
 
@@ -33,9 +34,14 @@ export const Separator = styled.div`
   width: 1px;
   background-color: var(--white);
   opacity: 0.2;
+  margin: 0 13px;
+
 
 `;
-export const Description = styled.div``;
+export const Description = styled.span`
+   font-size: 15px;
+   color: var(--gray);
+`;
 
 
 
